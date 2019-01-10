@@ -44,7 +44,7 @@ class RefleshTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-         print("willDisplay")
+         print("running willDisplay")
         //populate()
     }
     
@@ -57,7 +57,6 @@ class RefleshTableViewController: UITableViewController {
         print("willDisplayCell")
     }
 
-    
     @objc func populate()
     {
         print("populate")
