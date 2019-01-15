@@ -1,23 +1,11 @@
-//
-//  RefleshTableViewController.swift
-//  TableViewRefreshControl
-//
-//  Created by MAC on 10/1/19.
-//  Copyright © 2019 cagdaseksi. All rights reserved.
-//
-
 import UIKit
-
 class RefleshTableViewController: UITableViewController {
-
+    
     var array:[Int] = [1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3]
     var refresher: UIRefreshControl!
     
     override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        
-        print("viewDidLoad")
+    {super.viewDidLoad()
         
         refresher = UIRefreshControl()
         refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
@@ -25,17 +13,10 @@ class RefleshTableViewController: UITableViewController {
         tableView.addSubview(refresher)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return array.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -70,3 +51,49 @@ class RefleshTableViewController: UITableViewController {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
